@@ -2,4 +2,5 @@
 *.jpg
 *.png
 *.svg
+*.ai
 .DS_Store
