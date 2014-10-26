@@ -1,0 +1,161 @@
+
+.navwrap {
+	background: #fff;
+	height: 80px;
+}
+
+.menu {
+	width: 30px;
+	position: relative;
+	top: 50%;
+  	transform: translateY(80%);
+  	display: none;
+}
+
+.imgwrap {
+	background-image: url('../img/header.jpg');
+	background-size: cover;
+	background-origin: center center;
+	height: 500px;
+	overflow: hidden;
+	color: #fff;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.imgwrap > .container {
+	position: relative;
+	top: 50%;
+  	transform: translateY(-50%);
+}
+
+.header {
+	background: #fff;
+}
+
+.logo {
+	width: 80px;
+}
+
+.header-logo-wrap {
+	width: 30%;
+}
+
+.header-logo {
+	width: 100%;
+	margin: 0 auto;
+	vertical-align: middle;
+}
+
+.mobile-nav {
+	display: none;
+	right: 0;
+	position: absolute;
+	z-index: -10;
+}
+
+.navwrap {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.navwrap nav {
+	display: inline-block;
+	position: relative;
+	top: 50%;
+  	transform: translateY(40%);
+}
+
+.navwrap ul {
+	font-size: 0px;
+}
+
+.navwrap ul li {
+	display: inline-block;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.img-container {
+	padding-top: 4%;
+}
+
+div[data-js="packery_obj"] {
+}
+
+.item {
+	float: left;
+	width: 32.3%;
+}
+
+.item img {
+	width: 100%;
+}
+
+.open {
+	position: relative;
+	right: 200px;
+}
+
+/* === MEDIA QUERIES === */
+
+@media only screen and (max-width : 979px) {
+    .imgwrap {
+		height: 500px;
+	}
+
+	.header-logo-wrap {
+		width: 60%;
+	}
+	.item {
+   		width: 48%;
+   }
+}
+
+@media only screen and (max-width : 767px) {
+	.imgwrap {
+		height: 420px;
+	}
+	.item {
+   		width: 46.6%;
+   }
+}
+
+@media only screen and (max-width : 645px) {
+    .navwrap nav{
+   		display: none;
+   }
+
+   .menu, .mobile-nav {
+   		display: block;
+   }
+	
+	.item {
+   		width: 46.6%;
+   }
+   
+}
+
+@media only screen and (max-width : 480px) {
+	.header-logo-wrap {
+		width: 70%;
+	}
+
+	.imgwrap {
+		height: 320px;
+	}
+
+	.item {
+		width: 100%;
+	}
+
+	.img-container {
+		padding: 0;
+	}
+}
+
+@media only screen and (max-width : 320px) {
+   
+}
