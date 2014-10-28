@@ -47,13 +47,7 @@
 			</div>
 
 			<div data-js="packery_obj" class="container img-container clearfix">
-				
-					<!-- <div class="item"><img src="img/skating/jeremy-wray_fs360.jpg" alt=""></div>
-					<div class="item"><img src="img/skating/justin-bohl_nollie-bs-noseblunt.jpg" alt=""></div>
-					<div class="item"><img src="img/skating/matt-radosevich_bluntslide.jpg" alt=""></div>
-					<div class="item"><img src="img/skating/morgan-smith_sw-bs-tailslide.jpg" alt=""></div>
-					<div class="item"><img src="img/skating/shane-rogers_fs-crook-popover.jpg" alt=""></div> -->
-				
+				<!-- Render template data -->
 			</div>
 		</section>
 
@@ -61,31 +55,39 @@
 
 		<!-- templates -->
 
-		<script data-js="img-tmpl" type="text/x-handlebars-template">
-			{{#each skateboarding}}
-				<div class="item"><img src="{{image}}" alt="{{alt}}"></div>
-			{{/each}}
+		<script data-js="img-tmpl-skate" type="text/x-handlebars-template">
+				{{#each skateboarding}}
+					<div class="item"><img src="{{image}}" alt="{{alt}}"></div>
+				{{/each}}
+		</script>
+
+		<script data-js="img-tmpl-portrait" type="text/x-handlebars-template">
+				{{#each portrait}}
+					<div class="item"><img src="{{image}}" alt="{{alt}}"></div>
+				{{/each}}
+		</script>
+
+		<script data-js="img-tmpl-tearsheets" type="text/x-handlebars-template">
+				{{#each tearsheets}}
+					<div class="item"><img src="{{image}}" alt="{{alt}}"></div>
+				{{/each}}
+		</script>
+
+		<script data-js="img-tmpl-misc" type="text/x-handlebars-template">
+				{{#each misc}}
+					<div class="item"><img src="{{image}}" alt="{{alt}}"></div>
+				{{/each}}
 		</script>
 
 		<!-- libraries -->
 
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1-rc2/jquery.min.js"></script>
+		<script src="js/packery.pkgd.min.js"></script>
+		<script src="js/handlebars-v2.0.0.js"></script>
+		<script src="js/site-content.js"></script>
         <script src="js/path.min.js"></script>
         <script src="js/routes.js"></script>
-		<script src="js/handlebars-v2.0.0.js"></script>
-		<script src="js/packery.pkgd.min.js"></script>
-		<script src="js/site-content.js"></script>
         <script src="js/script.js"></script>
-
-        <script>
-
-			var src = $('[data-js="img-tmpl"]').html();
-			var tmpl = Handlebars.compile(src);
-
-			html = tmpl;
-
-			$('[data-js="packery_obj"]').append(html);
-		</script>
 
     </body>
 </html>

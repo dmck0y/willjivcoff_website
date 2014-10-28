@@ -14,12 +14,8 @@
 		container.children().removeClass('big');
 
 		target.toggleClass('big');
-
-		if (isBig) {
-			container.packery();
-		} else {
-			container.packery('fit', e.target);
-		}
+		container.packery('fit', '.item');
+		
 	});
 
 }());
