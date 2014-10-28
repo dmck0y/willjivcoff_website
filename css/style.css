@@ -80,14 +80,13 @@
 
 .img-container {
 	padding-top: 4%;
-}
-
-div[data-js="packery_obj"] {
+	position: relative;
 }
 
 .item {
 	float: left;
 	width: 32.3%;
+	cursor: pointer;
 }
 
 .item img {
