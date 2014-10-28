@@ -1,11 +1,4 @@
 (function(){
-	//routing click handler
-	$('body').on('click','a.route',function(e) {
-		if (App.router.goto($(this).attr('href'))) {
-			e.preventDefault();
-		}
-	});
-	
 	//opens side menu in mobile view
 	$('[data-js="menu"]').on('click', function(e){
 		e.preventDefault();

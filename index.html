@@ -13,12 +13,12 @@
     <body>
     	<section class="mobile-nav">
     		<ul>
-				<li><a class="route" href="#/skateboarding">skateboarding</a></li>
-				<li><a class="route" href="#/portrait">portrait</a></li>
-				<li><a class="route" href="#/tearsheets">tearsheets</a></li>
-				<li><a class="route" href="#/misc">misc</a></li>
-				<li><a class="route" href="#/about">about</a></li>
-				<li><a class="route" href="#/contact">contact</a></li>
+				<li><a href="#/skateboarding">skateboarding</a></li>
+				<li><a href="#/portrait">portrait</a></li>
+				<li><a href="#/tearsheets">tearsheets</a></li>
+				<li><a href="#/misc">misc</a></li>
+				<li><a href="#/about">about</a></li>
+				<li><a href="#/contact">contact</a></li>
 			</ul>
     	</section>
 		<section class="desktop">
@@ -28,12 +28,12 @@
 					<a href="#/"><img class="logo" src="svg/logomark.svg" alt="will jivcoff photo"></a>
 					<nav class="pull-right clearfix">
 						<ul>
-							<li><a class="route" href="#/skateboarding">skateboarding</a></li>
-							<li><a class="route" href="#/portrait">portrait</a></li>
-							<li><a class="route" href="#/tearsheets">tearsheets</a></li>
-							<li><a class="route" href="#/misc">misc</a></li>
-							<li><a class="route" href="#/about">about</a></li>
-							<li><a class="route" href="#/contact">contact</a></li>
+							<li><a href="#/skateboarding">skateboarding</a></li>
+							<li><a href="#/portrait">portrait</a></li>
+							<li><a href="#/tearsheets">tearsheets</a></li>
+							<li><a href="#/misc">misc</a></li>
+							<li><a href="#/about">about</a></li>
+							<li><a href="#/contact">contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -48,21 +48,44 @@
 
 			<div data-js="packery_obj" class="container img-container clearfix">
 				
-					<div class="item"><img src="img/skating/jeremy-wray_fs360.jpg" alt=""></div>
+					<!-- <div class="item"><img src="img/skating/jeremy-wray_fs360.jpg" alt=""></div>
 					<div class="item"><img src="img/skating/justin-bohl_nollie-bs-noseblunt.jpg" alt=""></div>
 					<div class="item"><img src="img/skating/matt-radosevich_bluntslide.jpg" alt=""></div>
 					<div class="item"><img src="img/skating/morgan-smith_sw-bs-tailslide.jpg" alt=""></div>
-					<div class="item"><img src="img/skating/shane-rogers_fs-crook-popover.jpg" alt=""></div>
+					<div class="item"><img src="img/skating/shane-rogers_fs-crook-popover.jpg" alt=""></div> -->
 				
 			</div>
 		</section>
 
+
+
+		<!-- templates -->
+
+		<script data-js="img-tmpl" type="text/x-handlebars-template">
+			{{#each skateboarding}}
+				<div class="item"><img src="{{image}}" alt="{{alt}}"></div>
+			{{/each}}
+		</script>
+
+		<!-- libraries -->
+
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1-rc2/jquery.min.js"></script>
-        <script src="js/router.js"></script>
+        <script src="js/path.min.js"></script>
         <script src="js/routes.js"></script>
 		<script src="js/handlebars-v2.0.0.js"></script>
 		<script src="js/packery.pkgd.min.js"></script>
+		<script src="js/site-content.js"></script>
         <script src="js/script.js"></script>
+
+        <script>
+
+			var src = $('[data-js="img-tmpl"]').html();
+			var tmpl = Handlebars.compile(src);
+
+			html = tmpl;
+
+			$('[data-js="packery_obj"]').append(html);
+		</script>
 
     </body>
 </html>
