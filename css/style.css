@@ -172,7 +172,7 @@ a:hover {
 	}
 
 	.imgwrap {
-		height: 320px;
+		height: 220px;
 	}
 
 	.img-container {
@@ -181,7 +181,6 @@ a:hover {
 
 	.item {
 		width: 100%;
-		padding-bottom: 100%;
 	}
 }
 
