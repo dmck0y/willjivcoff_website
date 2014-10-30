@@ -1,5 +1,5 @@
 (function(){
-	var container = $('[data-js="packery_obj"]');
+	var container = $('[data-js="imgGrid"]');
 
 	//setups image gallery template
 	var tmplskate = Handlebars.compile($('[data-js="img-tmpl-skate"]').html()),
@@ -25,28 +25,28 @@
 	}
 
 	Path.map("#/").to(function(){
-		$('[data-js="packery_obj"]').html('');
-		$('[data-js="packery_obj"]').append(htmlskate);
-		$('[data-js="packery_obj"]').append(htmlportrait);
-		$('[data-js="packery_obj"]').append(htmltearsheets);
-		$('[data-js="packery_obj"]').append(htmlmisc);
+		$(container).html('');
+		$(container).append(htmlskate);
+		$(container).append(htmlportrait);
+		$(container).append(htmltearsheets);
+		$(container).append(htmlmisc);
 	})
 
 	Path.map("#/skateboarding").to(function(){
-		$('[data-js="packery_obj"]').html(htmlskate);
-	}).enter(navUnderline);
+		$(container).html(htmlskate);
+	});
 
 	Path.map("#/portrait").to(function(){
-		$('[data-js="packery_obj"]').html(htmlportrait);
-	}).enter(navUnderline);
+		$(container).html(htmlportrait);
+	});
 
 	Path.map("#/tearsheets").to(function(){
-		$('[data-js="packery_obj"]').html(htmltearsheets);
-	}).enter(navUnderline);
+		$(container).html(htmltearsheets);
+	});
 
 	Path.map("#/misc").to(function(){
-		$('[data-js="packery_obj"]').html(htmlmisc);
-	}).enter(navUnderline);
+		$(container).html(htmlmisc);
+	});
 
 	Path.root('#/');
 	Path.rescue(notFound);
