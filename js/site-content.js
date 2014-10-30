@@ -30,20 +30,20 @@
         			{image: "img/tearsheet/2010-bones-trip3_concrete-dec2010.png"},
         			{image: "img/tearsheet/2010-bones-trip4_concrete-dec2010.png"},
         			{image: "img/tearsheet/2010-bones-trip5_concrete-dec2010.png"},
-        			{image: "img/tearsheet/2010-marty-murawski_concrete-dec2010.jpg"},
         			{image: "img/tearsheet/2010-will-jivcoff-checkout_concrete-photo-annual-2010.png"},
-        			{image: "img/tearsheet/2010may-thrasher_marty-murawski-matix-ad.jpg"},
-        			{image: "img/tearsheet/2011-REDSTAR_grant-patterson.jpg"},
+        			{image: "img/tearsheet/2010may-thrasher_marty-murawski-matix-ad.jpg"},        			
         			{image: "img/tearsheet/2011fall-sbc_riley-boland.jpg"},
         			{image: "img/tearsheet/2011oct_redstar-detroit1.png"},
         			{image: "img/tearsheet/2011oct_redstar-detroit2.png"},
         			{image: "img/tearsheet/2011oct_redstar-detroit3.png"},
         			{image: "img/tearsheet/2011sbc-fall_jordan-hoffart-1482x1024.jpg"},
         			{image: "img/tearsheet/2011sbc-pa_jesse-landen-billabong-ad.jpg"},
-        			{image: "img/tearsheet/2011sbc-pa_machnau-coastal-riders.jpg"},
         			{image: "img/tearsheet/2011sbc-spring_hill-sulpher.jpg"},
         			{image: "img/tearsheet/2011sbc-summer_jamie-jeffery.jpg"},
-        			{image: "img/tearsheet/2011sbc-summer_mikey-plantus.jpg"}
+        			{image: "img/tearsheet/2011sbc-summer_mikey-plantus.jpg"},
+        			{image: "img/tearsheet/2011-REDSTAR_grant-patterson.jpg"},
+        			{image: "img/tearsheet/2010-marty-murawski_concrete-dec2010.jpg"},
+        			{image: "img/tearsheet/2011sbc-pa_machnau-coastal-riders.jpg"}
 
         		],
         		misc: [

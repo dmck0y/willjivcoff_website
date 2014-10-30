@@ -15,31 +15,38 @@
 				htmlmisc = tmplmisc(data.content);
 
 
-	
+	var navUnderline = function(e) {
+		$('nav ul li a').removeClass('sel');
+		//$().addClass('sel');
+	};
 
 	function notFound() {
 		container.html('404 Not Found');
 	}
 
 	Path.map("#/").to(function(){
-		container.html('home');
+		$('[data-js="packery_obj"]').html('');
+		$('[data-js="packery_obj"]').append(htmlskate);
+		$('[data-js="packery_obj"]').append(htmlportrait);
+		$('[data-js="packery_obj"]').append(htmltearsheets);
+		$('[data-js="packery_obj"]').append(htmlmisc);
 	})
 
 	Path.map("#/skateboarding").to(function(){
 		$('[data-js="packery_obj"]').html(htmlskate);
-	});
+	}).enter(navUnderline);
 
 	Path.map("#/portrait").to(function(){
 		$('[data-js="packery_obj"]').html(htmlportrait);
-	});
+	}).enter(navUnderline);
 
 	Path.map("#/tearsheets").to(function(){
 		$('[data-js="packery_obj"]').html(htmltearsheets);
-	});
+	}).enter(navUnderline);
 
 	Path.map("#/misc").to(function(){
 		$('[data-js="packery_obj"]').html(htmlmisc);
-	});
+	}).enter(navUnderline);
 
 	Path.root('#/');
 	Path.rescue(notFound);

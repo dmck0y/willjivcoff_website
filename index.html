@@ -18,7 +18,7 @@
 				<li><a href="#/tearsheets">tearsheets</a></li>
 				<li><a href="#/misc">misc</a></li>
 				<li><a href="#/about">about</a></li>
-				<li><a href="#/contact">contact</a></li>
+				<!-- <li><a href="#/contact">contact</a></li> -->
 			</ul>
     	</section>
 		<section class="desktop">
@@ -33,7 +33,7 @@
 							<li><a href="#/tearsheets">tearsheets</a></li>
 							<li><a href="#/misc">misc</a></li>
 							<li><a href="#/about">about</a></li>
-							<li><a href="#/contact">contact</a></li>
+							<!-- <li><a href="#/contact">contact</a></li> -->
 						</ul>
 					</nav>
 				</div>
@@ -57,32 +57,32 @@
 
 		<script data-js="img-tmpl-skate" type="text/x-handlebars-template">
 				{{#each skateboarding}}
-					<div class="item"><img src="{{image}}" alt="{{alt}}"></div>
+					<div class="item" style="background: url( {{image}} ) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover;" ><img src="" alt="{{alt}}"></div>
 				{{/each}}
 		</script>
 
 		<script data-js="img-tmpl-portrait" type="text/x-handlebars-template">
 				{{#each portrait}}
-					<div class="item"><img src="{{image}}" alt="{{alt}}"></div>
+					<div class="item" style="background: url( {{image}} ) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover;" ><img src="" alt="{{alt}}"></div>
 				{{/each}}
 		</script>
 
 		<script data-js="img-tmpl-tearsheets" type="text/x-handlebars-template">
 				{{#each tearsheets}}
-					<div class="item"><img src="{{image}}" alt="{{alt}}"></div>
+					<div class="item" style="background: url( {{image}} ) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover;" ><img src="" alt="{{alt}}"></div>
 				{{/each}}
 		</script>
 
 		<script data-js="img-tmpl-misc" type="text/x-handlebars-template">
 				{{#each misc}}
-					<div class="item"><img src="{{image}}" alt="{{alt}}"></div>
+					<div class="item" style="background: url( {{image}} ) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover;" ><img src="" alt="{{alt}}"></div>
 				{{/each}}
 		</script>
 
 		<!-- libraries -->
 
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1-rc2/jquery.min.js"></script>
-		<script src="js/packery.pkgd.min.js"></script>
+		<script src="js/mason.js"></script>
 		<script src="js/handlebars-v2.0.0.js"></script>
 		<script src="js/site-content.js"></script>
         <script src="js/path.min.js"></script>
