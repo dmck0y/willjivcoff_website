@@ -14,14 +14,13 @@
 		tmplmisc = Handlebars.compile($('[data-js="img-tmpl-misc"]').html()),
 				htmlmisc = tmplmisc(data.content);
 
+	//setup about page
+	var tmplabout = Handlebars.compile($('[data-js="img-tmpl-about"]').html()),
+					htmlabout = tmplabout(data.content);
 
-	var navUnderline = function(e) {
-		$('nav ul li a').removeClass('sel');
-		//$().addClass('sel');
-	};
 
-	function notFound() {
-		container.html('404 Not Found');
+	var notFound = function() {
+		return "404 page notFound";
 	}
 
 	Path.map("#/").to(function(){
@@ -30,22 +29,32 @@
 		$(container).append(htmlportrait);
 		$(container).append(htmltearsheets);
 		$(container).append(htmlmisc);
+		$('nav ul li a').removeClass('sel');
 	})
 
 	Path.map("#/skateboarding").to(function(){
 		$(container).html(htmlskate);
+		$("a[href='#/skateboarding']").addClass('sel');
 	});
 
 	Path.map("#/portrait").to(function(){
 		$(container).html(htmlportrait);
+		$("a[href='#/portrait']").addClass('sel');
 	});
 
 	Path.map("#/tearsheets").to(function(){
 		$(container).html(htmltearsheets);
+		$("a[href='#/tearsheets']").addClass('sel');
 	});
 
 	Path.map("#/misc").to(function(){
 		$(container).html(htmlmisc);
+		$("a[href='#/misc']").addClass('sel');
+	});
+
+	Path.map("#/about").to(function(){
+		$(container).html(htmlabout);
+		$("a[href='#/about']").addClass('sel');
 	});
 
 	Path.root('#/');

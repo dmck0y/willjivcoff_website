@@ -12,7 +12,7 @@
 		
     </head>
     <body>
-    	<section class="mobile-nav">
+    	<section data-js="mobile-nav" class="mobile-nav">
     		<ul>
 				<li><a href="#/skateboarding">skateboarding</a></li>
 				<li><a href="#/portrait">portrait</a></li>
@@ -22,8 +22,8 @@
 				<!-- <li><a href="#/contact">contact</a></li> -->
 			</ul>
     	</section>
-		<section class="desktop">
-			<div class="navwrap">
+		<section data-js="desktop" class="desktop">
+			<div data-js="navwrap" class="navwrap">
 				<div class="container">
 					<a data-js="menu" href="#"><img class="menu pull-right" src="svg/menu.svg" alt=""></a>
 					<a href="#/"><img class="logo" src="svg/logomark.svg" alt="will jivcoff photo"></a>
@@ -77,6 +77,19 @@
 		<script data-js="img-tmpl-misc" type="text/x-handlebars-template">
 				{{#each misc}}
 					<div href="{{image}}" class="item strip" style="background: url( {{image}} ) no-repeat center center; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover;" ></div>
+				{{/each}}
+		</script>
+
+		<script data-js="img-tmpl-about" type="text/x-handlebars-template">
+				{{#each about}}
+					<div>
+						<div>
+							<img src="{{image}}" alt="will jivcoff">
+						</div>
+					</div>
+					<div>
+						<p>{{about}}</p>
+					</div>
 				{{/each}}
 		</script>
 

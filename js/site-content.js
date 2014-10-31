@@ -59,7 +59,10 @@
         			{image: "img/misc/stairwaytohell.jpg"},
         			{image: "img/misc/tree-fog.jpg"}
       
-        		]
+        		],
+                        about: [
+                                {image: 'img/willjivcoff.jpg', about: 'Will Jivcoff is a young up and coming photographer with a passion for capturing lifes exciting moments. Will brings distinct flavour to the subject matter that he captures.'}
+                        ]
         	};
 
 
