@@ -144,6 +144,16 @@ a:hover {
 	width: 100%;
 }
 
+.cover {
+	height: 0;
+	padding-bottom: 100%;
+	background: black;
+	opacity: 0;
+	-webkit-transition: all 0.35s ease;
+	-moz-transition: all 0.35s ease;
+	transition: all 0.35s ease;
+}
+
 /* === JS UTILITY CLASSES === */
 
 .sel {
@@ -165,6 +175,10 @@ a:hover {
 
 .keepRight {
 	right: 0;
+}
+
+.coverOpacity {
+	opacity: 0.8;
 }
 /* === MEDIA QUERIES === */
 

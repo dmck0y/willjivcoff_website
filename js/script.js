@@ -28,12 +28,19 @@
 		$target.addClass('sel');
 	});
 
+	// $('.cover').hover(function(e) {
+	// 		$(e.target).addClass('coverOpacity');
+	// 	},
+	// 	function(e) {
+	// 		$(e.target).removeClass('coverOpacity');
+	// 	}
+	//  );
 
-	// $('[data-js="imgGrid"]').on('click', '.item', function(e) {
-	// 	var re = /img(?:\/[^/#?]+)+\.(?:jpg|gif|png)/g; // matches img url in style attribute
-		
-	// 	console.log($(e.target).attr('style').match(re)[0]);
-	// });
+	$('[data-js="imgGrid"]').on("mouseenter mouseleave", '.cover', function(e) {
+		$(e.target).toggleClass('coverOpacity');
+	})
+
+
 
 	var slide = function() {
 		var $elm = $('.navwrap');
