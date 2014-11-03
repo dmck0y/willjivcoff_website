@@ -157,7 +157,7 @@ a:hover {
 .cover {
 	height: 0;
 	padding-bottom: 100%;
-	background: black;
+	background: url(../svg/logomark.svg);
 	opacity: 0;
 	-webkit-transition: all 0.35s ease;
 	-moz-transition: all 0.35s ease;
