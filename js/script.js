@@ -22,12 +22,6 @@
 	});
 
 
-	$('nav').on('click', 'a', function(e){
-		var $target = $(e.target);
-		$('nav ul li a').removeClass('sel');
-		$target.addClass('sel');
-	});
-
 	// $('.cover').hover(function(e) {
 	// 		$(e.target).addClass('coverOpacity');
 	// 	},

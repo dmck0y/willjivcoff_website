@@ -8,8 +8,11 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/strip.css">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="author" href="humans.txt">
 		
+		<script src="//use.typekit.net/ikz4trg.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
+		
+
     </head>
     <body>
     	<section data-js="mobile-nav" class="mobile-nav">
@@ -81,16 +84,15 @@
 		</script>
 
 		<script data-js="img-tmpl-about" type="text/x-handlebars-template">
-				{{#each about}}
-					<div>
-						<div>
+				<div class="container">
+					{{#each about}}
+						<div class="col-md-9 bio">
 							<img src="{{image}}" alt="will jivcoff">
+						 	<h1>Hello There</h1>
+							<p>{{{about}}}</p>
 						</div>
-					</div>
-					<div>
-						<p>{{about}}</p>
-					</div>
-				{{/each}}
+					{{/each}}
+				</div>
 		</script>
 
 		<!-- libraries -->

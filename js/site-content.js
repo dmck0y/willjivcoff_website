@@ -61,7 +61,7 @@
       
         		],
                         about: [
-                                {image: 'img/willjivcoff.jpg', about: 'Will Jivcoff is a young up and coming photographer with a passion for capturing lifes exciting moments. Will brings distinct flavour to the subject matter that he captures.'}
+                                {image: 'img/willjivcoff.jpg', about: 'Rather than write in the third person like most do in this case, I\'ll talk about myself like a person rather than an object.<br /><br /> I call Kitchener, Ontario my home base but more often than not you won\'t find me there. I have an incredible hunger to explore new places and meet new people which means I\'m usually on the road.<br /><br /> My skills aren\'t limited to taking photographs of people skateboarding but anyone that knows me would call me a liar if I said it wasn\'t my passion. You might wonder, "What\'s the fascination with a piece of wood and some wheels attached to it?" Well, without it I can easily say I wouldn\'t have travelled to the places I\'ve been, met the people I call my friends or have picked up the most crucial part to this website, a camera.<br /> Please have a seat, make yourself comfortable and take a look at my life through a camera lens.<br /><br />Will Jivcoff.'}
                         ]
         	};
 
