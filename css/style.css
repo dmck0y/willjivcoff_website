@@ -1,6 +1,7 @@
 html, body {
-	font-family: "proxima-nova-1","proxima-nova-2", "sans-serif";
+	font-family: "proxima-nova-1","proxima-nova-2", sans-serif;
 	font-size: 16px;
+	color: rgba(0,0,0,0.7);
 	-webkit-font-smoothing: subpixel-antialiased;
 }
 
@@ -40,7 +41,7 @@ a:hover {
 }
 
 .mobile-nav ul li a:hover {
-	background: rgba(231, 154, 13, 0.1);
+	background: rgba(0, 0, 0, .3);
 }
 
 .desktop {
@@ -165,16 +166,16 @@ a:hover {
 }
 
 .bio p {
-	font-weight: 200;
-	font-size: 20px;
-	line-height: 32px;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 28px;
 }
 
 .bio img {
 	display: inline;
 	width: 250px;
-	float: left;
-	margin-right: 20px;
+	float: right;
+	margin: 0 20px;
 }
 
 .bio h1 {
@@ -215,8 +216,8 @@ a:hover {
 	}
 
 	.item {
-		width: 33.3333%;
-		padding-bottom: 33.3333%;
+		width: 50%;
+		padding-bottom: 50%;
 	}
 
 }
