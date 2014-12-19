@@ -21,7 +21,7 @@
 
 	var notFound = function() {
 		return "404 page notFound";
-	}
+	};
 
 	$('nav').on('click', 'a', function(e){
 		var $target = $(e.target);
@@ -37,7 +37,7 @@
 		$(container).append(htmltearsheets);
 		$(container).append(htmlmisc);
 		$('nav ul li a').removeClass('sel');
-	})
+	});
 
 	Path.map("#/skateboarding").to(function(){
 		$(container).html(htmlskate);

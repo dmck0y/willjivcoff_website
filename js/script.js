@@ -32,7 +32,7 @@
 
 	$('[data-js="imgGrid"]').on("mouseenter mouseleave", '.cover', function(e) {
 		$(e.target).toggleClass('coverOpacity');
-	})
+	});
 
 
 

@@ -66,8 +66,10 @@
         	};
 
 
-	return data = {
-		content: content
+	data = {
+	       content: content
 	};
+
+        return data;
 
 })();
