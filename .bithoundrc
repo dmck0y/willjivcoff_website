@@ -1,0 +1,9 @@
+{
+	ignore: [
+		"**/handlebars-v2.0.0.js",
+		"**/mason.min.js",
+		"**/mason.js",
+		"**/path.min.js",
+		"**/strip.pkgd.min.js"
+	]	
+}

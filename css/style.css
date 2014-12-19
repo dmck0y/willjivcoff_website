@@ -165,6 +165,10 @@ a:hover {
 	transition: all 0.35s ease;
 }
 
+.bio {
+	margin-top: 50px;
+}
+
 .bio p {
 	font-weight: 300;
 	font-size: 18px;
@@ -175,7 +179,7 @@ a:hover {
 	display: inline;
 	width: 250px;
 	float: right;
-	margin: 0 20px;
+	margin: 58px 0 10px 40px;
 }
 
 .bio h1 {
@@ -261,6 +265,14 @@ a:hover {
 
 	.item {
 		width: 100%;
+	}
+
+
+	.bio img {
+		display: block;
+		width: 250px;
+		float: none;
+		margin: 20px auto;
 	}
 }
 
